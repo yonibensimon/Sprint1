@@ -12,8 +12,58 @@ table {
     height: 40px;
     background-color: gray;
     text-align: center;
+    cursor: pointer;
+}
+
+.board {
+    margin: auto;
+    border: 20px;
+    border-color: rgb(128, 128, 128);
+    box-shadow: 1px 1px lightgray, -.5em 0 .3em lightgray;
+    font-weight: bold;
 }
 
 .mine {
     text-align: center;
+    background-color: red;
+}
+
+.open {
+    color: rgba(0, 0, 0, 0);
+}
+
+.closed {
+    box-shadow: inset -2px -2px 0 rgba(0, 0, 0, 0.15);
+    background-color: lightgrey;
+}
+
+.modal {
+    background-color: rgb(235, 155, 155);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+.hidden {
+    display: none;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.reset {
+    margin: auto;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 2px;
+    text-align: center;
+    margin: 30px;
 }

@@ -3,16 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Mister Balls</title>
+  <title>Sprint 1: Mine Sweeper</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onkeyup="onHandleKey(event)" onload="onInit()">
+<body onload="resetGame()">
   <h1>Mine Sweeper</h1>
+  <div class="game-state">Game: <span>Off</span></div>  
+  <div class="timer">Elapsed: <span>0</span></div>  
+  <div class="open-cells">Open Cells: <span>0</span></div>  
+  <div class="marked-cells">Flagged Cells: <span>0</span></div>  
+  <div class="lives">Lives left: <span>3</span></div>  
+  <div class="modal hidden">
+    <button onclick="resetGame()">You lost, game over!</button>
+  </div>
+  <div onclick="resetGame()">🙂</div>
+  <div class="center-container">
+    <button onclick="onChangeLevel('Beginner')">Beginner</button>
+    <button onclick="onChangeLevel('Intermediate')">Intermediate</button>
+    <button onclick="onChangeLevel('Advanced')">Advanced</button>
+</div>
   <table>
     <tbody class="board"></tbody>
   </table>
-  <script src="js/main.js"></script>
+  <div class="center-container">
+    <button class="reset" onclick="resetGame()">Reset</button>
+  </div>  <script src="js/main.js"></script>
 </body>
+
+<footer>Jonathan Bensimon</footer>
 
 </html>
