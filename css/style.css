@@ -61,6 +61,12 @@ table {
     cursor: pointer;
 }
 
+.smiley {
+    cursor: pointer;
+    width: max-content;
+    margin: auto;
+}
+
 footer {
     background-color: #f0f0f0;
     padding: 2px;
